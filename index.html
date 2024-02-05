@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js Demo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" 
+    integrity="sha512-/WaZCC76Yn6MLEoK6b9np9yiLBet/RngBS33X1P0SHuag6j2E0e5rT7jbA2CvXCydN6+FkDYNx8FBM+vkzsthw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+    </script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/examples/jsm/": "./jsm/"
+            }
+        }
+    </script>
+    
+    <div class="cp_sidebar">
+        <header>Menu</header>
+        <nav class="cp_sidebar_nav">
+            <ul>
+            <li><a href="#"><i class="fa fa-home fa-fw"></i><span>Material</span></a>
+                <ul class="cp_sidebar_2ndnav">
+                <li><a href="#" id="changeType1"><i class="fa fa-calendar fa-fw"></i>MeshPhongMaterial</a></li>
+                <li><a href="#" id="changeType2"><i class="fa fa-calendar-minus-o fa-fw"></i>Wireframe</a></li>
+                <li><a href="#" id="changeType11"><i class="fa fa-calendar-times-o fa-fw"></i>ToonMaterial</a></li>
+                <li><a href="#" id="changeType12"><i class="fa fa-calendar-plus-o fa-fw"></i>LambertMaterial</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-file-text fa-fw"></i><span class="">TextGeometry</span></a>
+                <ul class="cp_sidebar_2ndnav">
+                <li><a href="#" id="changeType3"><i class="fa fa-file-image-o fa-fw"></i>Font:gentilis_bold</a></li>
+                <li><a href="#" id="changeType4"><i class="fa fa-file-video-o fa-fw"></i>Font:gentilis_regular</a></li>
+                <li><a href="#" id="changeType5"><i class="fa fa-file-audio-o fa-fw"></i>Font:helvetiker_bold</a></li>
+                <li><a href="#" id="changeType6"><i class="fa fa-file-audio-o fa-fw"></i>Font:helvetiker_regular</a></li>
+                <li><a href="#" id="changeType7"><i class="fa fa-file-audio-o fa-fw"></i>Font:optimer_bold</a></li>
+                <li><a href="#" id="changeType8"><i class="fa fa-file-audio-o fa-fw"></i>Font:optimer_regular</a></li>
+                </ul>
+            </li>
+            <li>
+            <a href="#"><i class="fa fa-comment fa-fw"></i><span class="">Dice</span></a>
+                <ul class="cp_sidebar_2ndnav">
+                <li><a href="#" id="changeType10"><i class="fa fa-comments fa-fw"></i>Dice</a></li>
+                <li><a href="#" id="changeType9"><i class="fa fa-commenting fa-fw"></i>Dice roll</a></li>
+                </ul>
+            </li>
+            <li>
+            <a href="#"><i class="fa fa-share-alt fa-fw"></i><span class="">Reference</span></a>
+                <ul class="cp_sidebar_2ndnav">
+                <li><a href="https://threejs.org/" target="_blank"><i class="fa fa-facebook fa-fw"></i>Three.js</a></li>
+                <li><a href="https://www.blender.org/" target="_blank"><i class="fa fa-twitter fa-fw"></i>Blender</a></li>
+                <li><a href="https://cdnjs.com/libraries/three.js" target="_blank"><i class="fa fa-twitter fa-fw"></i>cdnjs Three.js</a></li>
+                </ul>
+            </li>
+            <li class=""><a href="#" id="changeType13"><i class="fa fa-cog fa-fw"></i><span class="">fps</span></a></li>
+            <li class="control"><a href="#" id="changeType0"><i class="fa fa-cog fa-fw"></i><span class="">Rubik's Cube</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="index.js" type="module"></script>
+
+</body>
+</html>
